@@ -25,7 +25,7 @@ submit.addEventListener("click",() => {
             'Content-Type': 'application/json'
         }
     })
-    clearInput(document.getElementsByClassName("text_fields"))
+    clearInput(document.getElementsByClassName("text_field"))
     console.log("hi");
 })
 })
