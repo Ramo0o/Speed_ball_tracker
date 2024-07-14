@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('http://localhost:3000/api/get_numbers').then(response => {
+    fetch('https://speedballtracker-production.up.railway.app/api/get_numbers').then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
