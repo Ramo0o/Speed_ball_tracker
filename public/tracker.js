@@ -10,7 +10,7 @@ submit.addEventListener("click",() => {
     let back = document.getElementById("back").value;
     let time = document.getElementById("time").value;
     console.log(firstName,lastName,right,left,front,back,time)
-    fetch("http://localhost:3000/api/insert_user",{
+    fetch("https://speedballtracker-production.up.railway.app/api/insert_user",{
         method:"POST",
         body: JSON.stringify({
             firstName : firstName,
