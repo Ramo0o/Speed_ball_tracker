@@ -26,6 +26,7 @@ submit.addEventListener("click",() => {
         }
     })
     clearInput(document.getElementsByClassName("text_fields"))
+    console.log("hi");
 })
 })
 
