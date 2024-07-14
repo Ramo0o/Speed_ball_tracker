@@ -1,0 +1,35 @@
+#header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#fields{
+    display: grid;
+    width: 50%;
+    position: center;
+    grid-gap: 10px;
+    margin-left: 330px;
+}
+#centered-select{
+    text-align: center;
+}
+.topbar{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(39, 34, 34);
+}
+.topelements{
+    margin: 10px;
+}
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+#div1{
+    margin: 10px;
+}
