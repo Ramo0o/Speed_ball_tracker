@@ -1,22 +1,30 @@
+body{
+    background: linear-gradient(to right, yellow , blue);
+}
 #header{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin:10px;
 }
 #fields_container{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin:10px;
 }
 #fields{
     display: grid;
     width: 50%;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 #centered-select{
     text-align: center;
+}
+#submit{
+    border: none;
 }
 .topbar{
     color: white;
@@ -36,4 +44,27 @@ a {
 }
 #div1{
     margin: 10px;
+}
+.data{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+.header{
+    font-family: "DM Serif Display", serif;
+    color: white;
+}
+::placeholder{
+    color:black 
+}
+input[type = text]{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid black;
+}
+#time{
+    text-align: center;
+    background-color: transparent;
+    border: none;
 }
