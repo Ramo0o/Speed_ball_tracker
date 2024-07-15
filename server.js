@@ -10,8 +10,7 @@ import cors from 'cors';
 const app = express();
 const port = 3000;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const router = express.Router();
-const db =  new sqlite3.Database('tracker.db');
+const db =  new sqlite3.Database('tacker.db');
 
 
 app.use(bodyParser.json())
@@ -22,7 +21,7 @@ app.use(cors());
 app.get("/api/get_numbers",(req,res) => {
     let array = [];
     console.log("connected")
-    db.all("SELECT * FROM 'numbers'",[], (err,rows) =>{
+    db.all("SELECT * FROM 'numbers' WHERE date ==  DATE('now')",[], (err,rows) =>{
         rows.forEach(row =>{
             let obj = {
                 firstName : row.first_name,
@@ -31,6 +30,7 @@ app.get("/api/get_numbers",(req,res) => {
                 right : row.right,
                 front : row.front,
                 back : row.back ,
+                total: row.total,
                 duration : row.duration
             }
             array.push(obj)
