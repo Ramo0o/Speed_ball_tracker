@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let back = document.getElementById("back").value;
         let time = document.getElementById("time").value;
         console.log(firstName,lastName,right,left,front,back,time)
+
+clearElements(document.getElementsByClassName('text_field'))
         fetch("https://speedballtracker-production.up.railway.app/api/insert_user",{
             method:"POST",
             body: JSON.stringify({
@@ -27,3 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 })
+function clearElements(args){
+    for(let i in args){
+    args[i].value = "";
+    }
+}
