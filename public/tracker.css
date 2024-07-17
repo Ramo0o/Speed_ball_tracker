@@ -49,11 +49,11 @@ a {
     font-family: "Amatic SC", sans-serif;
     font-size: 24px;
     font-weight: 900;
-    color: white;
+    color: black;
 }
 .header{
     font-family: "DM Serif Display", serif;
-    color: white;
+    color: black;
 }
 ::placeholder{
     color:black 
