@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let time = document.getElementById("time").value;
         console.log(firstName,lastName,right,left,front,back,time)
 
-clearElements(document.getElementsByClassName('text_field'))
         fetch("https://speedballtracker-production.up.railway.app/api/insert_user",{
             method:"POST",
             body: JSON.stringify({
@@ -27,6 +26,7 @@ clearElements(document.getElementsByClassName('text_field'))
                 'Content-Type': 'application/json'
             }
         })
+clearElements(document.getElementsByClassName('text_field'))
     })
 })
 function clearElements(args){
