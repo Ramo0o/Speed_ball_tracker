@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, yellow , blue);
+    background: linear-gradient(to left, yellow , blue);
 }
 #header{
     display: flex;
