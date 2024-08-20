@@ -8,7 +8,7 @@ import cors from 'cors';
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const db =  new sqlite3.Database('tacker.db');
 
